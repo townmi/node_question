@@ -23,10 +23,16 @@ router.get("/reg", function (req, res){
 
 });
 
-router.post("/reg", function (req, res){
+router.post("/reg", function (req, res, next){
 
 	// console.log(req.body);
 
-	res.redirect("/");
+	// next();
+
+	// res.redirect("/");
+
+	res.send({"login" : true});
+
+	
 
 })

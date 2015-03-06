@@ -11,7 +11,9 @@ $(function(){
 			dataType: "json",
 			success: function (data) {
 
-				console.log(data);
+				if(data.login){
+					window.location.href = "/";
+				}
 
 			},
 			error: function (msg) {
