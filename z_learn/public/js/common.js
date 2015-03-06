@@ -8,7 +8,7 @@ $(function(){
 			data: {
 				"login":true
 			},
-			dataType: "json"
+			dataType: "json",
 			success: function (data) {
 
 				console.log(data);

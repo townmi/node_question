@@ -17,6 +17,12 @@ router.get("/login", function (req, res){
 
 });
 
+router.get("/reg", function (req, res){
+
+	res.redirect("/");
+
+});
+
 router.post("/reg", function (req, res){
 
 	// console.log(req.body);
