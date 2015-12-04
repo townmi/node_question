@@ -1,4 +1,4 @@
-// hello.cc
+// reader.cc
 #include <node.h>
 #include <node_buffer.h>
 #include <iostream>
@@ -13,8 +13,6 @@ namespace CreateObject {
     using v8::String;
     using v8::Value;
     using v8::Exception;
-
-
 
     int GetNum (const char* buffer) {
 
