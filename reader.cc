@@ -2,7 +2,7 @@
 #include <node.h>
 #include <node_buffer.h>
 #include <iostream>
-#include "jpeglib.h"
+//#include "jpeglib.h"
 
 namespace CreateObject {
 
