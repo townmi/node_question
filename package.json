@@ -1,0 +1,17 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "scripts": {
+    "i": "npm install",
+    "make": "node-gyp --debug configure build"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "node-gyp": "*"
+  },
+  "author": "townmi",
+  "license": "MIT"
+}
+
