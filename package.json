@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "i": "npm install",
-    "make": "node-gyp --debug configure build"
+    "make": "node-gyp --debug configure build",
+    "do": "node-gyp configure build"
   },
   "dependencies": {
 

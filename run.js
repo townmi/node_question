@@ -9,6 +9,6 @@ var result = fs.readFileSync("captcha.jpg");
 console.log(result);
 console.log("打印result长度 js－－》"+result.length);
 
-var Method = require('./build/Debug/reader');
+var Method = require('./build/Release/reader');
 
 console.log("验证码识别--->"+Method(result));

@@ -23,13 +23,13 @@ namespace CreateObject {
 
         jpeg_create_decompress(&cinfo);
 
-        jpeg_stdio_dest(&cinfo, *buffer);
+//        jpeg_stdio_dest(&cinfo, *buffer);
 
 //        jpeg_stdio_src(&cinfo, *buffer);
 
-        (void) jpeg_read_header(&cinfo, TRUE);
-
-        (void) jpeg_start_decompress(&cinfo);
+//        (void) jpeg_read_header(&cinfo, TRUE);
+//
+//        (void) jpeg_start_decompress(&cinfo);
 
 
         printf("%s\n", "打印char数组");
