@@ -2,7 +2,7 @@
 #include <node.h>
 #include <node_buffer.h>
 #include <iostream>
-//#include "jpeglib.h"
+#include "jpeg-9a/jpeglib.h"
 
 namespace CreateObject {
 
@@ -15,6 +15,22 @@ namespace CreateObject {
     using v8::Exception;
 
     int GetNum (const char* buffer) {
+
+        struct jpeg_decompress_struct cinfo;
+        struct jpeg_error_mgr jerr;
+
+        cinfo.err = jpeg_std_error(&jerr);
+
+        jpeg_create_decompress(&cinfo);
+
+        jpeg_stdio_dest(&cinfo, *buffer);
+
+//        jpeg_stdio_src(&cinfo, *buffer);
+
+        (void) jpeg_read_header(&cinfo, TRUE);
+
+        (void) jpeg_start_decompress(&cinfo);
+
 
         printf("%s\n", "打印char数组");
 
